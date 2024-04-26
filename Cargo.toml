@@ -1,11 +1,11 @@
 [package]
-name = "swp"
+name = "twp"
 version = "0.0.1"
 edition = "2021"
 description = "An experimental TailwindCSS parser written in Rust"
 license-file = "LICENSE"
-repository = "https://github.com/MRGRAVITY817/swp"
-documentation = "https://docs.rs/swp"
+repository = "https://github.com/MRGRAVITY817/twp"
+documentation = "https://docs.rs/twp"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
