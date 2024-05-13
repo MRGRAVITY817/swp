@@ -12,3 +12,4 @@ documentation = "https://docs.rs/twp"
 [dependencies]
 pest = "2.7.9"
 pest_derive = "2.7.9"
+tailwind-ast = "0.4.1"

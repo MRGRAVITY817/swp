@@ -1,5 +1,13 @@
 category    = { ASCII_ALPHA+ }
 subcategory = { ASCII_ALPHA+ }
 value       = { ASCII_ALPHANUMERIC+ }
-style       = { category ~ ("-" ~ subcategory)* ~ ("-" ~ value)* }
+style       = { (category ~ ("-" ~ subcategory)* ~ ("-" ~ value)*) | colored_element }
 style_list  = { style ~ (" " ~ style)* }
+
+// Colors
+color_name        = { ASCII_ALPHA+ }
+color_scale       = { ASCII_DIGIT+ }
+opacity           = { ASCII_DIGIT+ }
+color             = { color_name ~ ("-" ~ color_scale)? }
+colorable_element = { ASCII_ALPHA+ ~ ("-" ~ ASCII_ALPHA+)? }
+colored_element   = { colorable_element ~ "-" ~ color ~ ("/" ~ opacity)? }
